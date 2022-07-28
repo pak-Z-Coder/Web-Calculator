@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/index.5ca1729d.css">
+  </head>
+  <body class="bg-slate-300 text-black font-serif">
+    <main class="h-screen w-screen flex justify-center items-center">
+      <div
+        id="container"
+        class="m-1 shadow-2xl h-screen w-full shadow-black border p-2 flex flex-col lg:w-[50%] md:w-[37%] sm:h-screen sm:w-[95%] xl:h-[97%] md:h-[80%]  rounded-lg bg-black"
+      >
+        <div
+          id="screen"
+          class="w-[99%] h-12 md:h-14 text-right p-2 m-1 border border-black rounded-lg text-lg md:text-xl bg-green-200 shadow-inner shadow-black"
+        ></div>
+        <span class="text-white px-4 text-2xl m-2 shadow-inner shadow-white w-fit rounded-full">CASIO&#169;</span>
+        <div
+          id="keypad" style="user-select:none;"
+          class="shadow-inner shadow-slate-500 rounded h-[70%] sm:h-[80%] mt-12 text-white flex justify-around "
+        >
+          <div id="numbers" class="self-center h-full cursor-pointer mt-2 grid grid-cols-3">
+            <div
+              id="9"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              9
+            </div>
+            <div
+              id="8"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              8
+            </div>
+            <div
+              id="7"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              7
+            </div>
+            <div
+              id="6"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              6
+            </div>
+            <div
+              id="5"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              5
+            </div>
+            <div
+              id="4"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              4
+            </div>
+            <div
+              id="3"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              3
+            </div>
+            <div
+              id="2"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              2
+            </div>
+            <div
+              id="1"
+              class="bg-blue-500 hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              1
+            </div>
+            <div
+              id="0"
+              class="bg-blue-500 hover:scale-105 w-full h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              0
+            </div>
+          </div>
+          <div id="center" class="self-center items-end flex flex-col mx-1">
+            <div
+              id="Backspace"
+              class="hover:scale-110 w-1/2 lg:w-[90%] h-fit m-1 md:m-2 p-2 md:p-4 rounded cursor-pointer bg-orange-500 hover:shadow-inner hover:shadow-black flex items-center justify-center"
+            >
+              <i class="material-icons text-sm p-1"
+                >backspace</i
+              >
+            </div>
+            <div
+              id="equal"
+              class="hover:scale-110 w-1/2 lg:w-[90%] h-fit m-1 md:m-2 p-2 md:p-4 text-center rounded text-lg cursor-pointer bg-green-500 hover:shadow-inner hover:shadow-black"
+            >
+              =
+            </div>
+          </div>
+          <div
+            id="operators"
+            class="cursor-pointer bg-slate-800 pt-0 p-0 md:py-2 h-fit sm:h-[90%] pb-2 rounded-lg self-center space-y-6 mx-2"
+          >
+            <div
+              id="clear"
+              class="bg-red-700 hover:shadow-inner hover:shadow-black outline-0 hover:scale-105 w-[60%] outline h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              CLR
+            </div>
+            <div
+              id="+"
+              class="bg-yellow-200 text-black hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              +
+            </div>
+            <div
+              id="-"
+              class="bg-yellow-200 text-black hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              -
+            </div>
+            <div
+              id="*"
+              class="bg-yellow-200 text-black hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              x
+            </div>
+            <div
+              id="/"
+              class="bg-yellow-200 text-black hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+              /
+            </div>
+            <div
+              id="sqrt"
+              class="bg-yellow-300 text-black hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+            &radic;
+            </div>
+            <div
+              id="sq"
+              class="bg-yellow-300 text-black hover:scale-105 w-10 h-12 m-4 p-4 text-center rounded text-lg"
+            >
+            <p><var>x<sup>2</sup></var></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/script.js"></script>
+</html>
+fit
